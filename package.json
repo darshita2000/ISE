@@ -1,0 +1,28 @@
+{
+  "name": "mern_pizza",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "engines":{
+    "node": "18.15.0",
+    "npm" : "9.5.0"
+  },
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm start\" \"npm run client\"",
+    "start": "node server.js"
+  
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.1.0",
+    "nodemon": "^2.0.22",
+    "router": "^1.3.8",
+    "stripe": "^12.4.0",
+    "uuid": "^9.0.0"
+  }
+}
